@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>KRUG</title>
+    <style>
+
+
+    body{
+    margin:0;
+    padding:300px;
+    display:flex;
+    justify-content: center;
+    height: 100vh;
+    background:#050210;
+    }
+    
+    .glow{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient( #fb5dad, #55fb9f, #b97aff);
+    animation: animacija 0.5s linear infinite;     
+        }
+
+    @keyframes animacija{
+    0% {
+    transform: rotate(0deg);}
+   
+    100% {
+    transform: rotate(360deg);
+    }
+    }
+    
+    .glow span{
+    position:absolute;
+    width : 100%;
+    height : 100%;
+    border-radius: 50%;
+    background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+    }
+    .glow span:nth-child(1)
+    {
+        filter:blur(20px);
+    }
+    .glow span:nth-child(2)
+    {
+        filter:blur(40px);
+    }
+   
+    
+    .glow:after {
+    content:'';
+    position:fixed;
+    top:10px;
+    left:10px;
+    right:10px;
+    bottom:10px;
+    background:#050210;
+   
+    border-radius :50px;;
+    
+   
+    }
+    .centar{
+        background:  #1a1a1a;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-top: 10px;
+
+        -webkit-animation: centar 1s infinite;
+        -moz-animation:centar 1s infinite;
+        -o-animation: centar 1s infinite;
+        animation:centar 1s infinite;
+
+    }
+    @keyframes centar{
+             0%{
+                transform:scale(0);
+                opacity:0;
+             }
+             5%{
+                transform:scale(0.05);
+                opacity: .05;
+
+             }
+             10%{
+                 transform:scale(0.1);
+                 opacity: .1;
+                 
+             }
+             15%{
+                 transform:scale(0.15);
+                 opasity: .15;
+
+             }
+             20%{
+                 transform: scale(0.20);
+                 opacity: .20;
+
+             }
+             25%{
+                 transform: scale(0.25);
+                 opacity: .25;
+
+             }
+            
+             30%{
+                 transform: scale(0.3);
+                 opacity: .30;
+
+             }
+             35%{
+                 transform: scale(0.35);
+                 opacity: .35;
+
+             }
+            
+             40%{
+                 transform:scale(0.40);
+                 opacity: .40;
+                 
+             }
+             45%{
+                 transform:scale(0.45);
+                 opasity: .45;
+
+             }
+             50%{
+                 transform: scale(0.50);
+                 opacity: .50;
+
+             }
+             55%{
+                 transform: scale(0.55);
+                 opacity: .55;
+
+             }60%{
+                 transform:scale(0.60);
+                 opacity: .60;
+                 
+             }
+             65%{
+                 transform:scale(0.65);
+                 opasity: .65;
+
+             }
+             70%{
+                 transform: scale(0.70);
+                 opacity: .70;
+
+             }
+             75%{
+                 transform: scale(0.75);
+                 opacity: .75;
+             }
+             80%{
+                 transform:scale(0.80);
+                 opacity: .80;
+
+             }
+             85%{
+                 transform:scale(0.85);
+                 opasity: .85;
+
+             }
+             90%{
+                 transform: scale(0.90);
+                 opacity: .90;
+
+             }
+             95%{
+                 transform: scale(0.95);
+                 opacity: .95;
+             }
+             100%{
+                 transform:scale(1);
+                 opacity: 1;
+             }     
+
+         }
+    </style>
+
+</head>
+<body>
+    <div class="glow">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        ::after
+    </div>
+    <div class="centar"  ></div>
+
+    
+</body>
+</html>
